@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Slideshow Gallery | Salah Bedeiwi</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="mySlides">
+          <div class="numberText">1 / 6</div>
+          <img src="1.jpg">
+        </div>
+        <div class="mySlides">
+            <div class="numberText">2 / 6</div>
+            <img src="2.jpg" >
+          </div>
+          <div class="mySlides">
+            <div class="numberText">3 / 6</div>
+            <img src="3.jpg" >
+          </div>         
+          <div class="mySlides">
+            <div class="numberText">4 / 6</div>
+            <img src="4.jpg" >
+          </div>    
+          <div class="mySlides">
+            <div class="numberText">5 / 6</div>
+            <img src="5.jpg">
+          </div>       
+          <div class="mySlides">
+            <div class="numberText">6 / 6</div>
+            <img src="6.jpg">
+          </div>
+
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor w100p" 
+             src="1.jpg" onclick="currentSlide(1)"
+             alt="The Woods">
+          </div>
+          <div class="column">
+            <img class="demo cursor w100p" src="2.jpg" onclick="currentSlide(2)" alt="Cinque Terre">
+          </div>
+          <div class="column">
+            <img class="demo cursor w100p" src="3.jpg" onclick="currentSlide(3)" alt="Mountains and fjords">
+          </div>
+          <div class="column">
+            <img class="demo cursor w100p" src="4.jpg" onclick="currentSlide(4)" alt="Northern Lights">
+          </div>
+          <div class="column">
+            <img class="demo cursor w100p" src="5.jpg" onclick="currentSlide(5)" alt="Nature and sunrise">
+          </div>    
+          <div class="column">
+            <img class="demo cursor w100p" 
+                src="6.jpg" onclick="currentSlide(6)" 
+                alt="Snowy Mountains">
+          </div>
+        </div>
+      </div>
+      <script src="main.js"></script>
+</body>
+</html>
